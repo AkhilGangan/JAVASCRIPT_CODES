@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and its methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nihil quas? Repellat dolorum quasi, consequuntur hic consectetur maiores nesciunt ipsum. Doloribus veritatis voluptatum nesciunt praesentium voluptate aperiam ad, inventore natus id soluta deserunt recusandae assumenda illum eveniet incidunt. Maxime et quas maiores aperiam rem consectetur!</p>
+    </div>
+    <script>
+        // var string = "this";
+        var string = 'thi"s'; // if we want " inside string put it inside ' and vice versa
+        var name = "Akhil"; 
+        var message = 'Akhil is a nice boy'; 
+        var temp = `${name} is 'good coder' and also "${message}"`;// template literal and to use both '," use backtick `;
+        // console.log(string + name + message);
+        console.log(temp);
+        var len = name.length;
+        // console.log(`Length of name is ${len}`);
+
+        // Escape sequence characters(use backslash\)
+        //console.log("Hello \\nworld\nAkhil\tand\b");//n means newline
+        
+        //String Constructor
+        var y = new String("this");
+        console.log(y);
+
+        document.getElementById('content').innerHTML ='<h3> this is h3 heading </h3>';
+    </script>
+</body>
+</html>
