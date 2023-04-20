@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+        </ul>
+    </div>
+    <script>
+        // var string1 = "This is a string";
+        // var string1 ="This is a string2";
+        // //var is Globalscope so bymistake we can redeclare it so we dont need that instead use let
+        // console.log(string1);// the string gets redeclared so we dont need it
+
+        // // To declare a variable we will use let it is a block-level scope also it is global if declare outside the {}
+        // let a = "u";
+        // {
+        //     let a = "u6";
+        //     console.log(a); // It remains within this block only but show error if it is declare outside because a is already declare
+        // }
+        // console.log(a);
+
+        // // const is a constant value which cannot be changed
+        // const a = "This cannot be changed";
+        // // a = "I want to change"; We cannot change const but we can change var let 
+        // console.log(a); 
+        // IF-ELSE LADDER OR CONDITIONS
+        // let age = 10;// Give proper name to variable 
+        // if(age>18){
+        //     console.log("You can drink Beer");
+        // }
+        // else if(age==2){
+        //     console.log("Age is 2");
+        // }
+        // else if(age==10){
+        //     console.log("Age is 10");
+        // }
+        // else{
+        //     console.log("You can drink Water");
+        // }
+
+        // SWITCH CASES 
+        const cups = 44;
+        switch (cups) {
+            case 4:
+                console.log("The value is 4");
+                break;// If we dont use break then every case will run so put break and it will continue run from compare value matching*
+            case 41:
+                console.log("The value is 41");
+                break;
+            case 42:
+                console.log("The value is 42");
+                break;
+            case 43:
+                console.log("The value is 43");
+                break;
+        
+            default: // if no case matches then default is run
+                console.log("The value is none of the 4,41,42,43");
+                break;
+        }
+    </script>
+</body>
+</html>
