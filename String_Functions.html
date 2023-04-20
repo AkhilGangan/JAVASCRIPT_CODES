@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // for getting location of string 
+        var position = str.indexOf('is');// First occurance of substring
+        console.log(position);
+        // we can now overwrite the var position
+        position = str.lastIndexOf('is');// Last occurance of substring
+        console.log(position);
+
+        // Substring from a string
+        // var substr = str.slice(1,7);//Shows string till 1-6 and  Can accept negative value 
+        // var substr = str.substring(1,7);// same as slice but not accept negative values 
+        var substr1 = str.substr(1,3);// It shows how many characters are needed from given string i.e. 1-3 characters
+        console.log(substr1);
+
+        // var replaced = str.replace('string','Akhil');// for replacement in string but old string will not change or replaced*
+        // console.log(str);
+        // console.log(replaced);
+
+        // console.log(str.toUpperCase());// give() at end* for uppercase and lowercase both
+        // console.log(str.toLowerCase());
+
+        // var newString = str.concat('NewString');// To add in new string or concatenate also can use + sign 
+        // console.log(newString);
+        
+        // var strWithWhitespaces = "    this contains   whitespaces   ";
+        // console.log(strWithWhitespaces);
+        // console.log(strWithWhitespaces.trim());// Remove White Spaces from start and end but not from middle and give()* in trim 
+
+        // var char2 = str.charAt(2);// Extract or Show character of given index value 
+        // var char2 = str.charCodeAt(2); // Give value of character code of given character i.e UTF-16 or UTF - 8 value as per encoding;
+        // console.log(char2);
+        
+        console.log(str[3]);// for slicing a string
+    </script>
+</body>
+</html>
