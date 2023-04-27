@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">Simple html</div>
+    <script>
+        // Primitive Datatypes are integer,string,boolean,null,undefined,Bigint 
+        let myVar = 34;
+        let myVar2 = "String";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // if it is not primitive then it is OBJECT and objects are KEY-VALUE Pairs
+        // let employee = {
+        //     name: "Akhil",
+        //     ID: 530,
+        //     Address: "Sakinaka",
+        //     City: "Mumbai",
+        //     // "Cit y": "Mumbai",
+        // }
+        // console.log(employee);
+        // employee.Cit y; error*
+        // employee['Cit y'];if suppose there is space in keys like Cit y then this code will run above one will show error
+
+        // Arrays are object only and it is special type object 
+        // Arrays are used for serching in DOM because there are different types of elements in it
+        // let names = [1,2,undefined,"Akhil",null]; or other option down
+        // console.log(names[3]);// for index printing of arrays 
+        // let names = new Array(34, 2, 3, undefined, "Akhil", null);
+        // console.log(names);
+        // let names = new Array(23,45);
+        let names = new Array(23);//  For 23 elements but it will show empty 23 elements when we write names[20] undefined is shown for names[23] pushed element is shown
+        console.log(names.length);// for array length
+        names = names.sort(); // for sorting arrays
+        names.push("This is pushed");// For adding elements in array 
+        console.log(names);
+
+    </script>
+</body>
+</html>
