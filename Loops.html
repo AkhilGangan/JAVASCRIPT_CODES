@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is Loop");
+        // let i = 0;
+        // for(i=0;i<3;i++){
+        //     console.log(i);
+        // }
+        // i=0 is initialisation that runs only 1 time 
+
+    // To iterate an Array using For loop
+    let friends = ["Akhil","Faizan","Sai","Ajit","Chandu"];
+    // for (let index = 0; index < friends.length; index++) {
+    //     console.log("Hello Friend, "+ friends[index]);   
+    // }In earlier it was used now we have many easy options like
+
+    //  FOR_EACH
+    // friends.forEach(function f(element){
+        //     console.log("Hello friend," + element + " To modern JavaScript");
+        // });
+    //  FOR_OF
+    // for(element of friends){
+    //     console.log("Hello friend, " + element + " to modern javascript");
+    // }
+    
+    // To iterate an Object 
+    // FOR-IN loop is used
+    // let employee = {
+    //     name:"Akhil",
+    //     ID:530,
+    //     Address:"Sakinaka"    
+    // }
+    // for(key in employee){
+    //     console.log(`The ${key} of employee is ${employee[key]}`);
+    // }
+
+    // While Loops
+    // let i = 0;
+    // while(i<4){
+    //     console.log(`${i} is less than 4`);
+    //     // Continuously runs if i ++ is not used hang the browser
+    //     i++;
+    // }
+
+    // Do-while Loops
+    // It gives one chance to run the code whether the condition is true or false
+    let j = 34;
+    do{
+        console.log(`${j} is less than 4`);
+        j++;
+    }while(j<4)
+    </script>
+    
+</body>
+</html>
