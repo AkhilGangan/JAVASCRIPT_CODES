@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-events</title>
+    <style>
+        #btn{
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            padding: 10px 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Event is a signal which means something has happen like when we clicked a button some actions occurs -->
+    <div>
+    <h4>
+        Browser Events-
+    </h4>
+        click-click event has fired means you click any button
+        contextmenu-when u right click on mouse<br>
+        mouseover/mouseout-mouseover means getting inside element and mouseout means that your mouse came out of an element<br>
+        mousedown/mouseup- mousedown happens when your mouse button is pressed  and mouseup means when it is released<br>
+        mousemove
+        <div>
+           <h4>
+               Form Events-
+           </h4>
+            submit <br>
+            focus- it means when you focus on a input tag so that is a focus event <br>
+        </div>
+        
+    </div>
+    
+    DOMContentLoaded- this happens when your whole HTML DOM is loaded<br>
+
+
+    transitionend- if you transitioning in CSS ,so transitionend is a event
+    <div class="container">
+        <h1>
+            This is my heading
+        </h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum facere quia, voluptates maiores, laborum nemo architecto sapiente sunt voluptate sed maxime temporibus sint veritatis nulla harum labore in a. Facilis, iste placeat. Distinctio odio eius dignissimos alias veritatis nesciunt recusandae assumenda? Facilis doloribus at illo maiores assumenda similique odio aliquam culpa, animi unde? Blanditiis aperiam tenetur, nihil laudantium ea ipsum ad eaque? Nulla ipsa accusantium, maiores architecto eius esse non labore corrupti ullam. Perferendis eligendi, voluptatibus ullam iure error laboriosam repellat? Deleniti dolorum explicabo, tenetur, magni fuga adipisci unde aperiam nesciunt nam facere voluptas laboriosam, ea in. Sit assumenda aspernatur nostrum laborum temporibus, iure doloribus voluptates natus, reprehenderit minus rerum voluptatem odio distinctio accusamus dolore expedita aliquid quibusdam esse architecto. Porro nam velit ex obcaecati magnam recusandae rerum delectus sunt molestiae, cumque quasi commodi aliquid dignissimos dolorum maiores optio vero necessitatibus beatae quidem pariatur aut accusamus. Reiciendis nostrum quam nesciunt debitis facere, autem ab tenetur eum? Odit nisi facilis, doloribus maxime labore impedit atque quis repellendus molestiae sapiente temporibus deleniti cupiditate veniam voluptatem natus molestias voluptatum possimus fugiat eveniet numquam. Rem qui suscipit illum! Quas rem harum exercitationem perferendis labore dolorem veritatis voluptate, recusandae architecto dolorum culpa eaque, inventore quisquam quos neque corrupti nemo itaque consequatur illo perspiciatis. Sapiente omnis neque, nam eveniet cupiditate consectetur eius eaque quo eos repellendus fuga? Sint facilis consequatur at deleniti repellendus soluta nam.</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <!-- toggle means hide or show  -->
+    <!-- When I can click button I want my para to show and hide so I will use Clicked event -->
+    <script>
+        let para = document.getElementById('para');
+        // Listening the events 
+        para.addEventListener('mouseover',function run(){
+            // alert('Mouse Inside')
+            console.log('Mouse Inside')
+        });
+        para.addEventListener('mouseout',function run(){
+            // alert('Mouse outside')
+            console.log('Mouse Outside')
+        });
+
+
+
+        function togglehide(){
+            // let btn = document.getElementById('btn');// It works even if not cosider let because of unique ID para which is global accpeted in modern browser
+            let para = document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display= 'none'; 
+            } 
+            else{
+                para.style.display= 'block'; 
+            }
+        };
+    </script>
+ 
+
+</body>
+</html>
