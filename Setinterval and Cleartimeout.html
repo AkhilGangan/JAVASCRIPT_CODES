@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript SetInterval and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is Setinterval and setTimeout");
+        // Sometimes we want a function to run at a particular time continuously so we used setinterval and settimeout 
+
+        // setTimeout --> Allows us to run the function once after the interval of time
+        // setInterval --> Allows us to run the function repeatedly after the interval of time
+
+        function greet(name,byeText) {
+            console.log("Hello Good Morning" + " "+ name + " "+byeText);  
+        }
+        // greet();
+        // setTimeout(greet("Akhil"),5000);
+        // first arguement function ,2nd seconds ,3 rd function parameters or name can say with help of settimeout is posible 
+        // setTimeout(greet,5000,"Akhil","TakeCare"); // So we can pass multiple arguement
+        // setTimeout(greet(),5000); // Wrong as it is calling function inside setTimeout so we can say only give name of function
+
+
+        // timeOut = setTimeout(greet,5000,"Akhil","TakeCare"); 
+        // console.log(timeOut);// It is unique id 1 for set timeout with which we can cleartimeout
+        // clearTimeout(timeOut);
+        // ClearTimeout is used to clear a previous time set if we have new logic for set or can say if user has signin in a page so if 20 sec after there is settimeout so i want that set to be clear becoz user has already sign in 
+
+        // setInterval(greet, 1000,"Akhil","Good Night");
+       intervalId = setInterval(greet, 1000,"Akhil","Good Night");
+       clearInterval(intervalId);
+       
+    //    Example To display time
+    function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML= time;
+    }
+    setInterval(displayTime, 1000);
+        </script>
+</body>
+</html>
