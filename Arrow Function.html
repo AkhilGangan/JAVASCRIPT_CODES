@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+    <div class="container">
+        This is arrow functions
+    </div>
+    <script>
+        // Arrow functions are shortcuts
+        // function greet() {
+        //     console.log('Good Morning');
+        // }
+        // greet();
+
+        // Arrow Function 
+        // let greet = ()=>  {
+        //     console.log('Good Morning');
+        // }
+        // greet();
+
+        let greet = () => console.log('Good Morning'); // Put() if no argument is there use empty bracket
+        greet();
+
+        setTimeout(() => {
+            console.log("We are inside settimeout")
+        }, 3000);
+
+        // let sum = (a,b) =>{
+        //     return a+b;
+        // }
+
+        // To simplify above we write it in shortcut as
+        let sum = (a, b) => a + b;
+        let half = a => a / 2;
+
+        let obj1 = {
+            greeting: "Good Morning",
+            names: ["Akhil", "Faizan", "Rahul", "Chandu"],
+            speak() {
+                this.names.forEach( (student)=>{
+                    console.log(this.greeting+ " Hey Hii " + student);
+                });
+            }
+        }
+        obj1.speak();
+        // this means this object inside this object
+        // this means calling a object inside a arrow function
+        // Also know as lexical this *
+        // * imp point if we put normal function inside foreach loop then it will show undefined becoz it checks object within loop only but arrow function checks parent loop i.e. entire object 
+        // speak() {
+        //     this.names.forEach(function s (student){
+        //         console.log(this.greeting+ " Hey Hii " + student);
+        //     });
+        // }
+
+    </script>
+</body>
+
+</html>
