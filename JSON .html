@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Json</title>
+</head>
+<body>
+    <div class="container">Json</div>
+    <script>
+        // JSON means javascript object notation 
+        // Why make json transport it like this 
+        // Ans:sometimes your object wont be this simple,suppose you have object it has nested object and the object will have more properties also object may have object ,function,many more .So Converting this much data makes it difficult n complex thats why we used json and strigify means covert into string
+        let jsonObj={
+            name:"Akhil",
+            role:"WD",
+            friend:"faizan",
+            food:"Paneer"
+        }
+        console.log(jsonObj);
+
+        // Now Obeject converted into String  
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+        
+        myJsonStr=myJsonStr.replace('Akhil','Sonu');
+        console.log(myJsonStr);
+
+        // Now String converted into Object and *The string should be valid json string else error will occur
+        newjsonObj = JSON.parse(myJsonStr);
+        console.log(newjsonObj);
+
+    </script>
+</body>
+</html>
